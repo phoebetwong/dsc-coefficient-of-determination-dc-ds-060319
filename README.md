@@ -21,7 +21,7 @@ R-Squared uses a so-called "baseline" model which is a very simple, naive model.
 
 <img src="images/linreg_rsq.png" width="600">
 
-You can see that, in this plot, the baseline model always predicts the mean of $y$ **irrespective** of the value of the $x$. The red line, however, is our fitted regression line which makes use of $x$ values to predict the values of $y$. Looking at the plot above, R-Squared simply asks the question:
+You can see that, in this plot, the baseline model always predicts the mean of $y$ **irrespective** of the value of the $x$. The gray line, however, is our fitted regression line which makes use of $x$ values to predict the values of $y$. Looking at the plot above, R-Squared simply asks the question:
 
 >** Is our fitted regression line better than our baseline (worst) model ?**
 
@@ -36,13 +36,13 @@ $$ \large R^2 = 1- \dfrac{SS_{RES}}{SS_{TOT}} = 1 - \dfrac{\sum_i(y_i - \hat y_i
 * $SS_{RES}$ (also called RSS) is the **Residual** sum of squared errors of our regression model also known as **$SSE$** (Sum of Squared Errors). $SS_{RES}$ is the squared difference between $y$ and $\hat y$. For the one highlighted observation in our graph above, the $SS_{RES}$ is denoted by the red arrow. This part of the error is not explained by our model.
 
 
-* $SS_{TOT}$ (also called TSS)is the **Total** sum of squared error. $SS_{TOT}$ is the squared difference between $y$ and $\overline y$. For the one highlighted observation in our graph above, the $SS_{TOT}$ is denoted by the green arrow.
+* $SS_{TOT}$ (also called TSS)is the **Total** sum of squared error. $SS_{TOT}$ is the squared difference between $y$ and $\overline y$. For the one highlighted observation in our graph above, the $SS_{TOT}$ is denoted by the orange arrow.
 
 Looking at this, you'll understand that you can interpret R-Squared as "1 - the proportion of the variance _not_ explained by the model", which means as much as "the variation explained by the model". As a result, you'll want to maximize the R-Squared.
 
 For completion, 
 
-* $SS_{EXP}$ (also called ESS) is the **Explained** sum of squared error. $SS_{EXP}$ is the squared difference between $\hat y$ and $\overline y$. For the one highlighted observation in our graph above, the $SS_{EXP}$ is denoted by the blue arrow.
+* $SS_{EXP}$ (also called ESS) is the **Explained** sum of squared error. $SS_{EXP}$ is the squared difference between $\hat y$ and $\overline y$. For the one highlighted observation in our graph above, the $SS_{EXP}$ is denoted by the gray arrow.
 
 
 ### Let's interpret the outcome of $R^2$
